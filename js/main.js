@@ -1,4 +1,134 @@
-// Put your JavaScript code in the block below. You can remove line 3.
-$(document).ready(function() {
-    alert("Your JavaScript file is working.")
-})
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+
+
+
+
+  </head>
+  <body>
+
+
+          <div class="start text-center text-black d-flex" style="margin:40px 10px 40px 10px;">
+        		<div class="container all-buttons my-auto" >
+        			<div class="row" style="height:800px; background-color:purple; margin:20px">
+
+                <div class="col-lg-12 heading my-auto" style="height:20px text-center">
+                <h1>Select how much time you have </h1> <br>
+                </div>
+
+                <div class="col-lg-12 buttons-time my-auto" style="height:200px;">
+                  <button class="b" id="b1" type="button" onclick="filter1('thirty')" value="1">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b2" type="button" onclick="filter1('one')" value="2">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b3" type="button" onclick="filter1('five')" value="3">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b4" type="button" onclick="filter1('ten')" value="4">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  </div>
+                </div>
+                <div class="row" style="height:800px; background-color:blue; margin:10px">
+        				<div class="col-lg-12 buttons-time my-auto" style="height:200px">
+                  <button class="b" id="b1" type="button" onclick="filter2('Home')" value="1">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b2" type="button" onclick="filter2('Cafe')" value="2">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b3" type="button" onclick="filter2('Outdoors')" value="3">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b4" type="button" onclick="filter2('Work')" value="4">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+        				</div>
+              </div>
+
+              <div class="row" style="height:800px; background-color:green; margin:5px;">
+                <div class="col-lg-12 buttons-time my-auto" style="height:200px">
+                  <button class="b" id="b1" type="button" onclick="filter3('Comfort')" value="1">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b2" type="button" onclick="filter3('Distraction')" value="2">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+                  <button class="b" id="b3" type="button" onclick="filter3('Advice')" value="3">
+                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+
+
+        				</div>
+                </div>
+
+                <div class="row" style="height:500px; background-color:red;">
+        				<div class="col-lg-12 my-auto">
+        					<button type="button" class="btn btn-primary btn-x1" onclick="display()">Find out more</button>
+        				</div>
+        			</div>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+
+            </div>
+        		</div>
+        	</div>
+        <style>
+          #draggable { width: 50px; height: 50px; padding: 0.5em; }
+        </style>
+        <div id="draggable" class="ui-widget-content">
+        <p><a href="http://www.google.com" title="Link data" target="_blank" ><img src="Media/coffee.ico"  ></a></p>
+        </div>
+          <!-- MY Dummy links -->
+          <div class="thirty">
+            <div class="home">
+              <div class="comfort">
+                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick">ABC</a>
+              </div>
+            </div>
+          </div>
+          <div class="one">
+            <div class="home">
+              <div class="comfort">
+                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick">ABC</a>
+              </div>
+            </div>
+          </div>
+
+
+        <!-- MY JavaScript -->
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+        <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,4 +1,67 @@
-body {
-  background-color: #066e8a;
-  color: white;
+body, html{
+  width: 100%;
+  height: 100%;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+
+
+.buttons-time{
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+
+
+}
+
+
+.b {
+
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: white;
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+  transition: all .2s;
+  padding: 20px;
+   margin:40px;
+	justify-content: space-between;
+
+}
+.b:hover {
+   background-color: white;
+    -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+   -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+
+}
+.b:active{
+  border-radius: 50%;
+  border-width: thick;
+  border-style: dotted;
+  border-color: blue;
+}
+
+#b1:hover{
+	 -webkit-filter: sepia(50%);
+
+}
+.circle {
+	width: 200px;
+    margin: 6px 20px 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+	vertical-align: top;
+	strong {
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		line-height: 45px;
+		font-size: 43px;
+	}
 }
