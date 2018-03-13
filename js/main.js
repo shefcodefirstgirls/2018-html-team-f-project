@@ -4,22 +4,30 @@
 //})
 
 
-$( function() {
-  $( "#draggable" ).draggable();
-} );
+//  $( "#draggable" ).draggable();
+//} );
 
-function filter1(a){
-  var x= document.getElementByClassName(a);
-}
 
-function filter2(b){
-  var y= x.getElementsByClassName('b');
-}
 
-function filter3(c){
-  var z= y.getElementsByClassName('c');
-}
 
-function display(){
-  z.innerHTML;
-}
+//function filter1(a){
+//  window.x= document.getElementsByClassName(a);
+//}
+
+//function filter2(b){
+ //window.y= window.x.getElementsByClassName(b);
+//}
+
+//function filter3(c){
+  //window.z= window.y.getElementsByClassName(c);
+//}
+
+//function display(){
+  //z.innerHTML;
+//}
+
+
+$('#b1').click(function() {
+		$('#thirty').hide();
+
+      }
