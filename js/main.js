@@ -23,3 +23,14 @@ function filter3(c){
 function display(){
   z.innerHTML;
 }
+
+$(window).load(function(){
+  $(window).scroll(function() {
+    var wintop = $(window).scrollTop(), docheight = $('main').height(), winheight = $(window).height();
+    console.log(wintop);
+    var totalScroll = (wintop/(docheight-winheight))*100;
+    console.log("total scroll" + totalScroll);
+    $(".progressBar").css("width",totalScroll+"%");
+  });
+
+});
