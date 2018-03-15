@@ -5,14 +5,15 @@ body {
   line-height: 1.5em;
   text-align: justify;
   min-width: 320px;
-  font-family: 'Shadows Into Light', cursive;
 }
+
 body, html {
     height: 100%;
 }
 main {
     background-color: white;
     padding: 10px 5%;
+    font-family: 'Raleway', sans-serif;
 }
 
 #wrapper {
@@ -32,9 +33,19 @@ footer {
   border-top: 1px solid black;
   padding: 3px 5%;
   background-color: white;
-  color: black;
+  color: rgba(0, 0, 0, 0.85);
 }
 
+h1{
+  font-family: 'Lora', serif;
+
+}
+.navbar{
+  font-family: 'Raleway', sans-serif;
+}
+.nav-link{
+    color: rgba(0, 0, 0, 0.85);
+}
 .progressContainer {
   left:0;
   width: 100%;
