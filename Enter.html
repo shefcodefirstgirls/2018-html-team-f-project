@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <style>
@@ -15,10 +14,10 @@
 
   /* Slideshow container */
   .slideshow-container {
-    max-width: 100%;
-    max-height: 90%;
-    position: fixed;
-    margin: auto;
+    max-width: 1500px;
+    max-height: 710px;
+    position: relative;
+    margin:0px;
   }
 
   /* Hide the images by default */
@@ -55,26 +54,18 @@
   /* Caption text */
   .text {
     color: #f2f2f2;
-    font-size: 150px;
-    padding: 8px 12px;
+    font-size: 80px;
+    padding: 50px;
     position: absolute;
-    bottom: 8px;
+    bottom: 18px;
     width: 100%;
-    text-align: center;
+    display:flex;
+  	justify-content: center;
+  	flex-wrap:wrap;
+    font-family: 'Limelight', cursive;
   }
 
 
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
 
   .active, .dot:hover {
     background-color: #717171;
@@ -98,29 +89,74 @@
     from {opacity: .4}
     to {opacity: 1}
   }
+
+  .row{
+    display:flex;
+  	justify-content: center;
+  	flex-wrap:wrap;
+  }
+
+  .a {
+
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%); /* FF 35+ */
+    transition: all .2s;
+    padding: 20px;
+     margin:40px;
+  	justify-content: space-between;
+
+  }
+ .a:hover{
+   background-color: white;
+    -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+   -ms-transform: scale(10); /* IE 9 */
+    -webkit-transform: scale(10); /* Safari 3-8 */
+    transform: scale(10);
+
+ }
+
+ #div1 {
+  font-size:30px;
+  transition: all 2s cubic-bezier(0.0, 0.0, 0.0, 0.045);
+}
+
+#div1:hover{
+	transform: scale(90);
+ }
+
+
+
+
+
+
 </style>
   <body>
     <main>
+      <div class="lass="start text-center text-black d-flex" style="margin:0px;">
        <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" style="background-color:black">
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="Media\1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+          <img src="Media\14.jpg" style="width:100%; height:100%">
+          <div class="text" style="text-align:center">Are you struggling to see your beauty?</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="Media\2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <img src="Media\7.jpg" style="width:100% ; height:100%">
+          <div class="text" style="text-align:center">Are you hiding away?</div>
         </div>
 
         <div class="mySlides fade">
           <div class="numbertext"></div>
-          <img src="Media\4.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <img src="Media\1.jpg" style="width:100%; height:100%">
+          <div class="text" >We're here to help!</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -129,14 +165,12 @@
       </div>
       <br>
 
-      <!-- The dots/circles -->
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
 
+   </div>
+   <div class="row" style="height:25px" style="text-align:center">
+     <a href='index.html' title="Enter to find out more" ><div id="div1" class="fa"></div></a>
 
+ </div>
 
       <script src="js/enter.js"></script>
     </main>
