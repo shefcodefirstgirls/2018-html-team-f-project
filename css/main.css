@@ -22,7 +22,9 @@ background-color: rgba(0, 0, 0, 0.85);
 footer{
   color: white;
   text-align: center;
-
+}
+label{
+  color: white;
 }
 body, html {
     height: 100%;
@@ -32,7 +34,10 @@ main {
     padding: 10px 5%;
 
 }
-
+.contactform{
+  padding-left: 70px;
+  padding-right: 70px;
+}
 #wrapper {
   width: auto;
   margin: 0px auto;
