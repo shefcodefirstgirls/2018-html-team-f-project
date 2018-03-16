@@ -8,19 +8,43 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Raleway" rel="stylesheet">
 
-  </head>
-
+</head>
   <body>
+    <div id="wrapper">
     <div class="progressContainer">
         <div class="progressBar">
         </div>
       </div>
+      <nav id="navbar-example2" class="navbar navbar-dark" style="background-color: orange" >
+      <a class="navbar-brand" href="#" style="color: rgba(0, 0, 0, 0.85)">Name of Website</a>
+      <ul class="nav">
+          <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Resources</a>
+      </li>
+      <li class="nav-item">
+      <a class="nav-link" href="#">Contact Us</a>
+    </li>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> <img src="Media/TwitterLogo.png" width="30" /></a>
+<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+<button class="dropdown-item" type="button" disabled >
+  <a class="twitter-timeline" data-width="300" data-height="400" data-theme="light" data-link-color="#E81C4F" href="https://twitter.com/CodeFirstGirls?ref_src=twsrc%5Etfw">Tweets by CodeFirstGirls</a>
+</button>
+</div>
+</li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://github.com/shefcodefirstgirls/team-f-project">  <img src="Media/GitHubLogo.png" width="30" /> </a>
+   </li>
+      </ul>
+    </nav>
 
       <main>
-
 
           <div class="start text-center text-black d-flex" style="margin:40px 10px 40px 10px;">
         		<div class="container all-buttons my-auto" >
@@ -84,7 +108,6 @@
 
             </div>
         		</div>
-        	</div>
         <style>
           #draggable { width: 50px; height: 50px; padding: 0.5em; }
         </style>
@@ -107,7 +130,26 @@
             </div>
           </div>
 
+          <form action="" id="Details">
+          <fieldset>
+          <label><input type="radio" name="Option1" value="Critical" >Critical</label>
+          <label><input type="radio" name="Option1" value="Non Critical" >Non Critical</label>
+          <label><input type="radio" name="Option1" value="A" checked="checked" >All</label>
+              <br>
+              <br>
+          <label><input type="radio" name="Option2" value="Internal" >Internal</label>
+          <label><input type="radio" name="Option2" value="External" >External</label>
+          <label><input type="radio" name="Option2" value="A" checked="checked" >All</label>
+          </fieldset>
+          </form>
+          <br>
+              <br>
+          </main>
 
+          <footer>
+     <p>&copy; team F, 2018</p>
+   </footer>
+</div>
         <!-- MY JavaScript -->
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -117,15 +159,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
         <script src="js/main.js"></script>
-
-
-
-
-
-
-
-
-      </main>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>
