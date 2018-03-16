@@ -32,5 +32,12 @@ $('#b1').click(function() {
 
 	}*/
 
+	$(window).load(function(){
+	  $(window).scroll(function() {
+	    var wintop = $(window).scrollTop(), docheight = $('main').height(), winheight = $(window).height();
+	    console.log(wintop);
+	    var totalScroll = (wintop/(docheight-winheight))*100;
+	    $(".progressBar").css("width",totalScroll+"%");
+	  });
 
-			
+	});

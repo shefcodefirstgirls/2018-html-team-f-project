@@ -10,7 +10,7 @@ background-color: rgba(0, 0, 0, 0.85);
   font-family: 'Raleway', sans-serif;
 }
 
-.navbar.transparent.navbar-dark, footer {
+.navbar.transparent.navbar-dark, footer, .progressContainer {
     border-width: 0px;
     -webkit-box-shadow: 0px 0px;
     box-shadow: 0px 0px;
@@ -28,11 +28,6 @@ label{
 }
 body, html {
     height: 100%;
-}
-main {
-    background-color: ;
-    padding: 10px 5%;
-
 }
 .contactform{
   padding-left: 70px;
@@ -75,7 +70,6 @@ h1{
   position: fixed;
   bottom: 0px;
   overflow: hidden;
-  background-color: white;
   content: "";
 	display: table;
 	table-layout: fixed;
@@ -87,7 +81,7 @@ h1{
   height: 100%;
   z-index:99;
   max-width: 100%;
-  background-color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   -webkit-transition: width .6s ease;
   -o-transition: width .6s ease;
   transition: width .6s ease;
