@@ -20,16 +20,16 @@
       <main>
 
       <nav id="navbar-example2" class="navbar transparent navbar-dark" >
-      <a class="navbar-brand" href="#">Name of Website</a>
+      <a class="navbar-brand" href="#"><strong>Name of Website</strong></a>
       <ul class="nav">
           <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#"><strong>About Us</strong></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Resources</a>
+        <a class="nav-link" href="#"><strong>Resources</strong></a>
       </li>
       <li class="nav-item">
-      <a class="nav-link" href='contact.html'>Contact Us</a>
+      <a class="nav-link" href='contact.html'><strong>Contact Us</strong></a>
     </li>
   </li>
   <li class="nav-item dropdown">
@@ -45,10 +45,10 @@
    </li>
       </ul>
     </nav>
-    <button onclick="topFunction()" type="button" id="myBtn" class="btn btn-light"><img src="Media/arrow.png" width="10px" /></button>
+    <button onclick="topFunction()" type="button" id="myBtn" class="btn btn-dark"><img src="Media/arrow.png" width="10px" /></button>
 
     <!--Buttons container  -->
-          <div class="start text-center text-black d-flex" style="margin:40px 10px 40px 10px;">
+          <div class="start text-center text-black d-flex">
         		<div class="container all-buttons my-auto" >
         			<div class="row filterbox">
 
@@ -56,19 +56,23 @@
                 <h1>How much time do you have ?</h1> <br>
                 </div>
 
-                <div class="col-lg-12 buttons-time my-auto" style="height:200px;">
+                <div class="col-lg-12 buttons-time my-auto">
 
                   <button class="b" name="Option1" type="button" value="one">
-                  <img src="Media\coffee.ico" height="80px" width="80px">One</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px">
+                  <div class="text">One</div></button>
 
                   <button class="b" name="Option1" type="button"  value="five">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Five</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px">
+                  <div class="text">Five</div></button>
 
                   <button class="b" name="Option1" type="button" value="ten">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Ten</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px">
+                  <div class="text">Ten</div></button>
 
                   <button class="b" name="Option1" type="button" value="A" id="selected">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px">
+                  <div class="text">Any</div></button>
 
                   </div>
                 </div>
@@ -78,18 +82,18 @@
                 <div class="col-lg-12 heading my-auto">
                   <h1>Where are you? </h1> <br>
                 </div>
-        				<div class="col-lg-12 buttons-time my-auto" style="height:200px">
+        				<div class="col-lg-12 buttons-time my-auto" >
                   <button class="b" name="Option2" type="button" value="Home">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Home</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Home</div></button>
 
                   <button class="b" name="Option2" type="button" value="Cafe">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Cafe</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Cafe</div></button>
 
                   <button class="b" name="Option2" type="button" value="Work">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Work</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Work</div></button>
 
                   <button class="b" name="Option2" type="button" value="A" id="selected">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Any</div></button>
 
         				</div>
               </div>
@@ -98,26 +102,26 @@
                 <div class="col-lg-12 heading my-auto">
                   <h1>What are you looking for? </h1> <br>
                 </div>
-                <div class="col-lg-12 buttons-time my-auto" style="height:200px">
+                <div class="col-lg-12 buttons-time my-auto" >
                   <button class="b" name="Option3" type="button" value="Advice">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Advice</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Advice</div></button>
 
                   <button class="b" name="Option3" type="button" value="Distraction">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Distraction</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Distraction</div></button>
 
                   <button class="b" name="Option3" type="button" value="Real Talk">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Real Talk</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Real Talk</div></button>
 
                   <button class="b" name="Option3" type="button" value="A" id="selected">
-                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
+                  <img src="Media\coffee.ico" height="80px" width="80px"><div class="text">Any</div></button>
 
 
         				</div>
                 </div>
 
-                <div class="row filterbox" >
+                <div class="row filterbox2" >
         				<div class="col-lg-12 my-auto">
-        					<button type="button" class="btn btn-primary btn-x1" id="submit" onclick="display()">Find me a solution</button>
+        					<button type="button" class="btn btn-danger btn-x1" id="submit" onclick="display()">Find me a solution</button>
         				</div>
         			</div>
 
@@ -125,9 +129,9 @@
         		</div>
 
           <!-- MY Dummy links -->
-          <br>
-        <br>
+
         <div class="table">
+          <div class="col-lg-12 my-auto">
           <table id="Resources" >
             <tr  style="visibility:hidden;">
               <th >Time</th>
@@ -183,7 +187,7 @@
             </tr>
           </table>
         </div>
-
+      </div>
         </main>
           <footer>
      <p>&copy; Palak Lad, Prerna Chander & Nadia Zuraida</p>
