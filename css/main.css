@@ -37,6 +37,7 @@ label{
 }
 body, html {
     height: 100%;
+    color:white;
 }
 .contactform{
   padding-left: 70px;
@@ -137,20 +138,7 @@ h1{
 	 -webkit-filter: sepia(50%);
 
 }
-.circle {
-	width: 200px;
-    margin: 6px 20px 20px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-	vertical-align: top;
-	strong {
-		position: absolute;
-		top: 70px;
-		left: 0;
-		width: 100%;
-		text-align: center;
-		line-height: 45px;
-		font-size: 43px;
-	}
+
+#Resources td{
+  border-top: 0px;
 }

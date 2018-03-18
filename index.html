@@ -46,56 +46,70 @@
       </ul>
     </nav>
     <button onclick="topFunction()" type="button" id="myBtn" class="btn btn-light"><img src="Media/arrow.png" width="10px" /></button>
+
+    <!--Buttons container  -->
           <div class="start text-center text-black d-flex" style="margin:40px 10px 40px 10px;">
         		<div class="container all-buttons my-auto" >
         			<div class="row filterbox">
 
                 <div class="col-lg-12 heading my-auto">
-                <h1>Select how much time you have </h1> <br>
+                <h1>How much time do you have ?</h1> <br>
                 </div>
 
                 <div class="col-lg-12 buttons-time my-auto" style="height:200px;">
-                  <button class="b" id="b1" type="button"  value="1">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
 
-                  <button class="b" id="b2" type="button" onclick="filter1('one')" value="2">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option1" type="button" value="one">
+                  <img src="Media\coffee.ico" height="80px" width="80px">One</button>
 
-                  <button class="b" id="b3" type="button" onclick="filter1('five')" value="3">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option1" type="button"  value="five">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Five</button>
 
-                  <button class="b" id="b4" type="button" onclick="filter1('ten')" value="4">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option1" type="button" value="ten">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Ten</button>
+
+                  <button class="b" name="Option1" type="button" value="A" id="selected">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
+
                   </div>
                 </div>
 
                 <div class="row filterbox">
+
+                <div class="col-lg-12 heading my-auto">
+                  <h1>Where are you? </h1> <br>
+                </div>
         				<div class="col-lg-12 buttons-time my-auto" style="height:200px">
-                  <button class="b" id="b1" type="button" onclick="filter2('Home')" value="1">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option2" type="button" value="Home">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Home</button>
 
-                  <button class="b" id="b2" type="button" onclick="filter2('Cafe')" value="2">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option2" type="button" value="Cafe">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Cafe</button>
 
-                  <button class="b" id="b3" type="button" onclick="filter2('Outdoors')" value="3">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option2" type="button" value="Work">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Work</button>
 
-                  <button class="b" id="b4" type="button" data-filter="filter2('Work')" value="4">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option2" type="button" value="A" id="selected">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
 
         				</div>
               </div>
 
               <div class="row filterbox" >
+                <div class="col-lg-12 heading my-auto">
+                  <h1>What are you looking for? </h1> <br>
+                </div>
                 <div class="col-lg-12 buttons-time my-auto" style="height:200px">
-                  <button class="b" id="b1" type="button" onclick="filter3('Comfort')" value="1">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option3" type="button" value="Advice">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Advice</button>
 
-                  <button class="b" id="b2" type="button" onclick="filter3('Distraction')" value="2">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option3" type="button" value="Distraction">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Distraction</button>
 
-                  <button class="b" id="b3" type="button" onclick="filter3('Advice')" value="3">
-                  <img src="Media\coffee.ico" height="80px" width="80px"></button>
+                  <button class="b" name="Option3" type="button" value="Real Talk">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Real Talk</button>
+
+                  <button class="b" name="Option3" type="button" value="A" id="selected">
+                  <img src="Media\coffee.ico" height="80px" width="80px">Any</button>
 
 
         				</div>
@@ -103,33 +117,72 @@
 
                 <div class="row filterbox" >
         				<div class="col-lg-12 my-auto">
-        					<button type="button" class="btn btn-primary btn-x1" id="submit" onclick="display()">Find out more</button>
+        					<button type="button" class="btn btn-primary btn-x1" id="submit" onclick="display()">Find me a solution</button>
         				</div>
         			</div>
 
             </div>
         		</div>
-        <style>
-          #draggable { width: 50px; height: 50px; padding: 0.5em; }
-        </style>
-        <div id="draggable" class="ui-widget-content">
-        <p><a href="http://www.google.com" title="Link data" target="_blank" ><img src="Media/coffee.ico"  ></a></p>
-        </div>
+
           <!-- MY Dummy links -->
-          <div class="col-md-6" id="thirty">
-            <div class="home">
-              <div class="comfort">
-                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick">ABC</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6" id="div class="col-md-6" id="thirty"">
-            <div class="home">
-              <div class="comfort">
-                <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick">ABC</a>
-              </div>
-            </div>
-          </div>
+          <br>
+        <br>
+        <div class="table">
+          <table id="Resources" >
+            <tr  style="visibility:hidden;">
+              <th >Time</th>
+              <th>Location</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td class="Time" style="visibility:hidden;">one</td>
+              <td class="Location" style="visibility:hidden;">Home</td>
+              <td class="Type" style="visibility:hidden;">Distraction</td>
+              <td><img src="Media\mirror.ico"></td>
+              <td><p> Smile as widely as you can for a 45 seconds</p></td>
+
+            </tr>
+            <tr>
+              <td class="Time" style="visibility:hidden;">one</td>
+              <td class="Location" style="visibility:hidden;">Home</td>
+              <td class="Type" style="visibility:hidden;">Advice</td>
+              <td><img src="Media\mirror.ico"></td>
+              <td><p> Smile as widely as you can for a 45 seconds</p></td>
+            </tr>
+
+            <tr>
+            <td class="Time" style="visibility:hidden;">one</td>
+            <td class="Location" style="visibility:hidden;">Home</td>
+            <td class="Type" style="visibility:hidden;">Real Talk</td>
+            <td><img src="Media\mirror.ico"></td>
+            <td><p> Smile as widely as you can for a 45 seconds</p></td>
+            </tr>
+
+            <tr>
+            <td class="Time" style="visibility:hidden;">Five</td>
+            <td class="Location" style="visibility:hidden;">Home</td>
+            <td class="Type" style="visibility:hidden;">Distraction</td>
+            <td><img src="Media\mirror.ico"></td>
+            <td><p> Smile as widely as you can for a 45 seconds</p></td>
+            </tr>
+
+            <tr>
+              <td class="Time" style="visibility:hidden;">Five</td>
+              <td class="Location" style="visibility:hidden;">Home</td>
+              <td class="Type" style="visibility:hidden;">Advice</td>
+              <td><img src="Media\mirror.ico"></td>
+              <td><p> Smile as widely as you can for a 45 seconds</p></td>
+            </tr>
+
+            <tr>
+              <td class="Time" style="visibility:hidden;">Five</td>
+              <td class="Location" style="visibility:hidden;">Home</td>
+              <td class="Type" style="visibility:hidden;">Real Talk</td>
+              <td><img src="Media\mirror.ico"></td>
+              <td><p> Smile as widely as you can for a 45 seconds</p></td>
+            </tr>
+          </table>
+        </div>
 
         </main>
           <footer>
