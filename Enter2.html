@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Nested Example</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <style type="text/css">
+            .box
+            {
+                border-width: 1px;
+                border-color: black;
+                border-style: solid;
+            }
+            img{
+              filter: grayscale();
+
+            }
+
+            .btncontainer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              align-content: center;
+              width: 100%;
+              height: 10%;
+              position: absolute;
+            }
+            #enter {
+              background-color: green;
+              border:0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="box size22"><img src="Media/Enter/22.jpg" style="width:107px; height:107px;" id="img1"></div>
+            <div class="box size43"><img src="Media/Enter/19.jpg" style="width:221px; height:164px;"></div>
+            <div class="box size52"><img src="Media/Enter/27.jpg" style="width:278px; height:107px;"></div>
+            <div class="box size11" style="background-color:black"></div>
+            <div class="box size43"><img src="Media/Enter/7.jpg" style="width:221px; height:164px;"></div>
+            <div class="box size55"><img src="Media/Enter/28.jpg" style="width:278px; height:278px;"></div>
+            <div class="box size52"><img src="Media/Enter/20.jpg" style="width:278px; height:107px;"></div>
+            <div class="box size22"><img src="Media/Enter/35.jpg" style="width:107px; height:107px;"></div>
+            <div class="box size42"><img src="Media/Enter/38.jpg" style="width:221px; height:107px;"></div>
+            <div class="box size22"><img src="Media/Enter/17.jpg" style="width:107px; height:107px;"></div>
+            <div class="box size12"><img src="Media/Enter/51.jpg" style="width:50px; height:107px;"></div>
+            <div class="box size21"><img src="Media/Enter/53.jpg" style="width:107px; height:50px;"></div>
+            <div class="box size34"><img src="Media/Enter/29.jpg" style="width:164px; height:221px;"></div>
+            <div class="box size22"><img src="Media/Enter/4.jpg" style="width:107px; height:107px;"></div>
+            <div class="box size44"><img src="Media/Enter/24.jpg" style="width:221px; height:221px;"></div>
+            <div class="box size55"><img src="Media/Enter/33.jpg" style="width:278px; height:278px;"></div>
+            <div class="box size14"><img src="Media/Enter/52.jpg" style="width:50px; height:221px;"></div>
+            <div class="box size45"><img src="Media/Enter/36.jpg" style="width:221px; height:278px;"></div>
+            <div class="box size22"><img src="Media/Enter/11.jpg" style="width:107px; height:107px;"></div>
+            <div class="box size33"><img src="Media/Enter/25.jpg" style="width:164px; height:164px;"></div>
+            <div class="box size43"><img src="Media/Enter/40.jpg" style="width:221px; height:164px;"></div>
+            <div class="box size34"><img src="Media/Enter/8.jpg" style="width:164px; height:221px;"></div>
+            <div class="box size22" style="background-color:grey"></div>
+
+            <div class="box size12" style="background-color:black"></div>
+            <div class="box size22" ><img src="Media/Enter/54.jpg" style="width:107px; height:107px;"></div>
+
+
+            <div class="box size22" style="background-color:black"></div>
+            <div class="box size11" style="background-color:grey"></div>
+        </div>
+        <div class="btncontainer">
+          <button type="button" class="btn btn-danger btn-x1" id="enter" onclick="display()">Blah blah, u pwetty, blah...</button>
+        </div>
+        <script type="text/javascript" src="https://cdn.rawgit.com/suprb/Nested/master/jquery.nested.js"></script>
+        <script type="text/javascript">
+            $("#container").nested({
+                selector: '.box',
+                gutter: 7,
+                minWidth: 50,
+                animate: true,
+                animationOptions: {
+                  speed: 230,
+                  duration: 200,
+                  queue: true,
+                }
+
+            });
+        </script>
+    </body>
+</html>
